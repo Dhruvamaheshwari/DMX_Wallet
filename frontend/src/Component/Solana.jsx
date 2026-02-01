@@ -20,12 +20,13 @@ function Solana() {
     const [copied, setCopied] = useState(false);
     const [loading, setLoading] = useState(false);
     const [seeKey, setSeeKey] = useState({});
+    const backendUrl= import.meta.env.VITE_BACKEND_URL;
 
     async function HandleSubmit(e) {
         e.preventDefault();
         setLoading(true);
         try {
-            const res = await axios.post("http://localhost:4000", Form);
+            const res = await axios.post(backendUrl, Form);
             if (res.status === 200) {
                 setIsWallet((pre) => [
                     ...pre,
@@ -45,7 +46,7 @@ function Solana() {
         setLoading(true);
         setCount((count) => count + 1);
         try {
-            const res = await axios.post("http://localhost:4000", { count: count });
+            const res = await axios.post(backendUrl, { count: count });
             if (res.status === 200) {
                 setIsWallet((pre) => [
                     ...pre,
