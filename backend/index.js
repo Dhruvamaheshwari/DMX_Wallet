@@ -66,4 +66,9 @@ app.post('/' , (req  ,res)=>{
     })
 })
 
+
+app.get('/' , (req ,res)=>{
+    res.send("Server is running. ALL GOOD.........")
+})
+
 app.listen(4000, () => console.log("server is startd at port 4000"));
