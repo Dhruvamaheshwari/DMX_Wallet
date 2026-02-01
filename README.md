@@ -50,8 +50,8 @@ A minimalist Solana wallet generator built with React and Node.js. Generate secu
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/dmx-wallet.git
-   cd dmx-wallet
+   git clone https://github.com/Dhruvamaheshwari/DMX_Wallet.git
+   cd DMX_Wallet
    ```
 
 2. **Install Backend Dependencies**
